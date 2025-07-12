@@ -1,0 +1,145 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1d1f21;
+            color: #eaeaea;
+            padding: 20px;
+        }
+
+        /* Header Styling */
+        h1 {
+            color: #f39c12;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* Container for entry content */
+        .container {
+            background-color: #2c3e50;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+
+        /* Left content (Text and Entry Details) */
+        .text-content {
+            flex: 1;
+        }
+        .entry-header h2 {
+            color: #f39c12;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        .entry-header p {
+            font-size: 1.1em;
+            margin: 5px 0;
+        }
+        .entry-header strong {
+            font-weight: bold;
+        }
+
+        /* Entry details and notes section */
+        .entry-details {
+            font-size: 1.1em;
+        }
+        .notes {
+            margin-top: 20px;
+            background-color: #34495e;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .notes p {
+            font-size: 1em;
+        }
+
+        /* Screenshot Section */
+        .screenshot {
+            flex-shrink: 0;
+            width: 250px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+        }
+        .screenshot img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Button Styling - Container */
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        /* Button Base Style */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 32px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            color: white;
+            background: linear-gradient(45deg, #ff6b6b, #f39c12);
+            border: none;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Hover Effects for All Buttons */
+        .btn:hover {
+            cursor: pointer;
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Specific Button Variations */
+        .back-btn {
+            background: linear-gradient(45deg, #3498db, #2980b9);
+        }
+        .back-btn:hover {
+            background: linear-gradient(45deg, #2980b9, #3498db);
+        }
+
+        .prev-btn {
+            background: linear-gradient(45deg, #e74c3c, #c0392b);
+        }
+        .prev-btn:hover {
+            background: linear-gradient(45deg, #c0392b, #e74c3c);
+        }
+
+        .next-btn {
+            background: linear-gradient(45deg, #2ecc71, #27ae60);
+        }
+        .next-btn:hover {
+            background: linear-gradient(45deg, #27ae60, #2ecc71);
+        }
+
+        /* Arrow styling */
+        .arrow {
+            margin-right: 8px;
+        }
+
+        /* Focus state for accessibility */
+        .btn:focus {
+            outline: none;
+            box-shadow: 0 0 10px rgba(0, 123, 255, 0.8);
+        }
